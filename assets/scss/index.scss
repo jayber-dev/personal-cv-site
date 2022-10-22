@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    position: fixed;
+    width: 100vw;
+    margin: 0px;
+    background-color: black;
+    color: white;
+    height: 50px;
+    z-index: 1;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        justify-content: center;
+        margin: 0px;
+        padding: 0px;
+        height: 50px;
+        align-content: center;
+        align-items: center;
+    }
+
+    li {
+        margin-left: 20px;
+        margin-right: 20px;
+        list-style: none;
+    }
+}
+
+.main-section {
+    background-image: url('/pic04.jpg');
+    height: 100vh;
+    width: 100vw;
+    background-color: aquamarine;
+
+    .left-side {
+        height: 100vh;
+        width: 30vw;
+        background-color: brown;
+        background-image: url('/assets/images/pic02.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+        border-right: 0px solid red;  
+        transform-origin: border-right;
+        transform: skewX(-10deg);
+    }
+
+}
