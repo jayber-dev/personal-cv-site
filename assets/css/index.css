@@ -87,20 +87,53 @@ nav li {
   width: 100vw;
   height: 100vh;
   background-color: blanchedalmond;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 .work-section h3 {
-  margin-top: 5px;
+  margin: 0px;
+  padding-top: 100px;
+  text-align: center;
 }
 .work-section .img-wrapper {
-  background-color: aquamarine;
-  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  align-items: center;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  flex-shrink: 1;
+  flex-wrap: wrap;
+  flex: 1 1 1 100px;
+  width: 100vw;
   height: 80vh;
-  padding: 20px;
+}
+.work-section .img-wrapper .img-container {
+  height: 200px;
+  width: 200px;
+  margin: 10px;
+}
+.work-section .img-wrapper .img-container img {
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px 1px grey;
+}
+.work-section .img-wrapper .overlay {
+  color: #f1f1f1;
+  transition: 0.5s ease;
+  opacity: 0;
+  font-size: 20px;
+  text-align: center;
+  margin-top: -200px;
+}
+.work-section .img-wrapper .overlay button {
+  height: 50px;
+  width: 100px;
+  background-color: darkcyan;
+}
+.work-section .img-wrapper .img-container:hover .overlay {
+  z-index: 1;
+  opacity: 1;
 }
 
 .cv-section {
