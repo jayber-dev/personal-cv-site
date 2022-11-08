@@ -1,10 +1,12 @@
 html {
     scroll-behavior: smooth;
+    
 }
 
 body {
     margin: 0;
     box-sizing: border-box;
+    
 }
 
 nav {
@@ -18,7 +20,7 @@ nav {
     background-color: transparent;
     color: white;
     height: 50px;
-    z-index: 1;
+    z-index: 10;
     opacity: 1;
 
     ul {
@@ -43,6 +45,7 @@ nav {
         a {
             color: whitesmoke;
             opacity: 1;
+            text-decoration: none;
         }
     }
 
@@ -50,20 +53,86 @@ nav {
 }
 
 .main-section {
+    z-index: 2;
     display: flex;
     flex-direction: row;
     background-image: url('/pic04.jpg');
     background-size: cover;
     height: 100vh;
     width: 100vw;
-    background-color: aquamarine;
+    
+    .python-logo {
+        width: 50px;
+        rotate: (20deg);
+        position: absolute;
+        top:-100px;
+        left: 40vw;
+        animation-name: rain;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        overflow: hidden;
+        z-index: 1;
+    }
+    .javascript-logo {
+        width: 50px;
+        rotate: (20deg);
+        position: absolute;
+        top:-100px;
+        left: 20vw;
+        animation-name: rain;
+        animation-duration: 25s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        overflow: hidden;
+        z-index: 1;
+    }
 
-    .left-side {
+    .html-logo {
+        width: 50px;
+        rotate: (20deg);
+        position: absolute;
+        top:-100px;
+        left: 75vw;
+        animation-name: rain;
+        animation-duration: 15s;
+        animation-delay: 4s;
+        animation-iteration-count: infinite;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+    .css-logo {
+        width: 50px;
+        rotate: (-5deg);
+        position: absolute;
+        top:-100px;
+        left: 64vw;
+        animation-name: rain;
+        animation-duration: 35s;
+        animation-delay: 1.5s;
+        animation-iteration-count: infinite;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+    .node-logo {
+        width: 50px;
+        position: absolute;
+        top:-100px;
+        left: 12vw;
+        animation-name: rain;
+        animation-duration: 40s;
+        animation-delay: 3s;
+        animation-iteration-count: infinite;
+        overflow: hidden;
+        z-index: 1;
+    }
+    
         display: flex;
         flex-direction: column;
         height: 100vh;
-        width: 30vw;
-        background-color: rgb(4, 4, 53);
+        
+        background-color: rgb(7, 7, 48);
         // background-image: url(/assets/images/pic02.jpg);
         background-position: center;
         background-repeat: no-repeat;
@@ -72,72 +141,41 @@ nav {
         justify-content: center;
         
         
-        .profile-img {
-            margin: 50px;
-            width: 200px;
-            border-radius: 100%; 
-            box-shadow: 0 0 30px 2px black;
-            animation-name: fade-in;
-        animation-duration: 3s;
-        }
-
-        .personal-details {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-
-            h1 {
-                color: white;
-            }
-        
-            .personal-details {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                
-        
-                h1 {
-                    color: white;
-                }
-                p {
-                    color: white;
-                }
-            }
-
-        }
-
-        @keyframes fade-in {
-            0% {width: 0px;}
-            100% {}
-        }
-                
-         
+    box-sizing: border-box;
+    .profile-img {
+        box-shadow: 0 0 30px 1px black;
+        margin: 50px;
+        width: 200px;
+        border-radius: 100%;
+        // animation-name: fade-in;
+        // animation-duration: 1s;  
+        z-index: 9;  
     }
 
-    .right-side {
+    .personal-details {
         display: flex;
         flex-direction: column;
-        justify-items: center;
         justify-content: center;
-        width: 70vw;
-        background-color:whitesmoke ;
-        .self-description{
-            // height: 100vh;
-            display: flex;
-            justify-content: center;
-            p{
-                text-align: justify;
-                width: 40vw;
-               
-            }
-            
+        align-items: center;
+        
+
+        h1 {
+            color: white;
+            font-family: cursive;
         }
-    }    
-   
+        p {
+            color: white;
+            font-family: cursive;
 
+        }
+    }
+}
 
+@keyframes rain {
+    0% {}
+    7% {opacity: 1;}
+    100% {top:95vh,;
+        opacity:0;}    
 }
 
 @keyframes fade-in {
@@ -145,6 +183,7 @@ nav {
         }
 }
 .work-section{
+    z-index: 2;
     width: 100vw;
     height: 100vh;
     background-color: blanchedalmond;
