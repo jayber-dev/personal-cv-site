@@ -41,6 +41,7 @@ nav {
     display: flex;
     flex-direction: row;
     background-image: url('/pic04.jpg');
+    background-size: cover;
     height: 100vh;
     width: 100vw;
     background-color: aquamarine;
@@ -50,60 +51,91 @@ nav {
         flex-direction: column;
         height: 100vh;
         width: 30vw;
-        background-color: brown;
-        background-image: url(/assets/images/pic02.jpg);
+        background-color: rgb(7, 7, 48);
+        // background-image: url(/assets/images/pic02.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         align-items: center;
         justify-content: center;
-        animation-name: fade-in;
-        animation-duration: 3s;
         
-        .profile-img {
-            margin: 50px;
-            width: 200px;
-            border-radius: 100%; 
-        }
-
-        .personal-details {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-
-            h1 {
-                color: white;
+        .left-wrapper {
+            box-sizing: border-box;
+            .profile-img {
+                box-shadow: 0 0 30px 1px black;
+                margin: 50px;
+                width: 200px;
+                border-radius: 100%;
+                animation-name: fade-in;
+                animation-duration: 1s;
+                
             }
-            p {
-                color: white;
+        
+            .personal-details {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                
+        
+                h1 {
+                    color: white;
+                }
+                p {
+                    color: white;
+                }
             }
-
         }
-
-        @keyframes fade-in {
-            0% {margin-left: -1000px;}
-            100% {}
-        }
+                
+         
     }
 
     .right-side {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        justify-content: center;
         width: 70vw;
-        height: 100vh;
-        // background-color: cadetblue;
-    }
+        background-color:whitesmoke ;
+        .self-description{
+            // height: 100vh;
+            display: flex;
+            justify-content: center;
+            p{
+                text-align: justify;
+                width: 40vw;
+               
+            }
+            
+        }
+    }    
+   
+
+
 }
 
+@keyframes fade-in {
+    0% {width: 0%;
+        }
+}
 .work-section{
     width: 100vw;
     height: 100vh;
     background-color: blanchedalmond;
     
-    h3 {
-        margin: 0px;
-        padding-top: 100px;
-        text-align: center;
+    .work-section-header {
+        display: flex;
+        height: 100px;
+        align-items: center;
+        justify-content: center;
+        h3 {
+            margin: 0px;
+            // padding-top: 100px;
+            text-align: center;
+        }
     }
+    
+    
 
     .img-wrapper {
         display: flex;
@@ -170,3 +202,5 @@ nav {
     height: 100vh;
     background-color: deeppink;
 }
+
+

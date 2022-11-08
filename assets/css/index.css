@@ -37,6 +37,7 @@ nav li {
   display: flex;
   flex-direction: row;
   background-image: url("/pic04.jpg");
+  background-size: cover;
   height: 100vh;
   width: 100vw;
   background-color: aquamarine;
@@ -46,51 +47,71 @@ nav li {
   flex-direction: column;
   height: 100vh;
   width: 30vw;
-  background-color: brown;
-  background-image: url(/assets/images/pic02.jpg);
+  background-color: rgb(7, 7, 48);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   align-items: center;
   justify-content: center;
-  animation-name: fade-in;
-  animation-duration: 3s;
 }
-.main-section .left-side .profile-img {
+.main-section .left-side .left-wrapper {
+  box-sizing: border-box;
+}
+.main-section .left-side .left-wrapper .profile-img {
+  box-shadow: 0 0 30px 1px black;
   margin: 50px;
   width: 200px;
   border-radius: 100%;
+  animation-name: fade-in;
+  animation-duration: 1s;
 }
-.main-section .left-side .personal-details {
+.main-section .left-side .left-wrapper .personal-details {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.main-section .left-side .personal-details h1 {
+.main-section .left-side .left-wrapper .personal-details h1 {
   color: white;
 }
-.main-section .left-side .personal-details p {
+.main-section .left-side .left-wrapper .personal-details p {
   color: white;
-}
-@keyframes fade-in {
-  0% {
-    margin-left: -1000px;
-  }
 }
 .main-section .right-side {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  justify-content: center;
   width: 70vw;
-  height: 100vh;
+  background-color: whitesmoke;
+}
+.main-section .right-side .self-description {
+  display: flex;
+  justify-content: center;
+}
+.main-section .right-side .self-description p {
+  text-align: justify;
+  width: 40vw;
 }
 
+@keyframes fade-in {
+  0% {
+    width: 0%;
+  }
+}
 .work-section {
   width: 100vw;
   height: 100vh;
   background-color: blanchedalmond;
 }
-.work-section h3 {
+.work-section .work-section-header {
+  display: flex;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+}
+.work-section .work-section-header h3 {
   margin: 0px;
-  padding-top: 100px;
   text-align: center;
 }
 .work-section .img-wrapper {

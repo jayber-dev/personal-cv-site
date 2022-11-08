@@ -1,0 +1,206 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    position: fixed;
+    width: 100vw;
+    margin: 0px;
+    background-color: black;
+    color: white;
+    height: 50px;
+    z-index: 1;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        justify-content: center;
+        margin: 0px;
+        padding: 0px;
+        height: 50px;
+        align-content: center;
+        align-items: center;
+    }
+
+    li {
+        margin-left: 20px;
+        margin-right: 20px;
+        list-style: none;
+    }
+
+    
+}
+
+.main-section {
+    display: flex;
+    flex-direction: row;
+    background-image: url('/pic04.jpg');
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    background-color: aquamarine;
+
+    .left-side {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 30vw;
+        background-color: rgb(7, 7, 48);
+        // background-image: url(/assets/images/pic02.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-items: center;
+        justify-content: center;
+        
+        .left-wrapper {
+            box-sizing: border-box;
+            .profile-img {
+                box-shadow: 0 0 30px 1px black;
+                margin: 50px;
+                width: 200px;
+                border-radius: 100%;
+                animation-name: fade-in;
+                animation-duration: 1s;
+                
+            }
+        
+            .personal-details {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                
+        
+                h1 {
+                    color: white;
+                }
+                p {
+                    color: white;
+                }
+            }
+        }
+                
+         
+    }
+
+    .right-side {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        justify-content: center;
+        width: 70vw;
+        background-color:whitesmoke ;
+        .self-description{
+            // height: 100vh;
+            display: flex;
+            justify-content: center;
+            p{
+                text-align: justify;
+                width: 40vw;
+               
+            }
+            
+        }
+    }    
+   
+
+
+}
+
+@keyframes fade-in {
+    0% {width: 0%;
+        }
+}
+.work-section{
+    width: 100vw;
+    height: 100vh;
+    background-color: blanchedalmond;
+    
+    .work-section-header {
+        display: flex;
+        height: 100px;
+        align-items: center;
+        justify-content: center;
+        h3 {
+            margin: 0px;
+            // padding-top: 100px;
+            text-align: center;
+        }
+    }
+    
+    
+
+    .img-wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+        align-items: center;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        flex-shrink: 1;
+        flex-wrap: wrap;
+        flex: 1 1 1 100px;
+        width: 100vw;
+        height: 80vh;
+
+        .img-container {
+            height: 200px;
+            width: 200px;
+            margin: 10px;
+
+            img {
+                height: 200px;
+                width: 200px;
+                border-radius: 10px;
+                box-shadow: 1px 1px 3px 1px grey;
+            }
+            
+        }
+
+        .overlay {
+            color: #f1f1f1;
+            transition: .5s ease;
+            opacity:0;
+            font-size: 20px;
+            text-align: center;
+            margin-top:-200px;
+
+            button {
+                height: 50px;
+                width: 100px;
+                background-color: darkcyan;
+            }
+          }
+
+        
+        .img-container:hover .overlay{
+            z-index: 1;
+            opacity: 1;
+            // background: black;
+        }   
+    }
+    
+ 
+}
+
+.cv-section {
+    width: 100vw;
+    height: 100vh;
+    background-color: crimson;
+}
+
+.contact-me-section {
+    width: 100vw;
+    height: 100vh;
+    background-color: deeppink;
+}
+
+
