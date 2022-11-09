@@ -64,7 +64,7 @@ nav {
     flex-direction: column;
     height: 100vh;
     
-    background-color: rgb(218, 218, 218);
+    background-color: rgb(126, 126, 126);
     // background-image: url(/assets/images/pic02.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -191,78 +191,93 @@ nav {
     }
     
       
+    .main-content-wrapper {
+        // background-color: rgb(129, 129, 129);
+        border-radius: 50px;
 
-    .main-content {
-        display: flex;
-        flex-direction: row;
-        z-index: 10;
-
-        .profile-img {
-            box-shadow: 0 0 30px 1px black;
-            margin: 50px;
-            width: 200px;
-            max-height: 200px;
-            border-radius: 100%;
-            // animation-name: fade-in;
-            // animation-duration: 1s;  
-            z-index: 9;  
-        }
-    
-        .personal-details {
+        .main-content {
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            flex-direction: row;
+            z-index: 10;
     
-            h1 {
-                color: white;
-                // font-family: cursive;
+            .profile-img {
+                box-shadow: 0 0 30px 1px black;
+                margin: 50px;
+                width: 200px;
+                max-height: 200px;
+                border-radius: 100%;
+                // animation-name: fade-in;
+                // animation-duration: 1s;  
+                z-index: 9;  
             }
-            p {
-                color: white;
-                // font-family: cursive;
-    
-            }
-        }
-    }
-
-    .skill-list{
-        color: whitesmoke;
-        display: flex;
-        align-items: baseline;
-        flex-direction: row;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: medium;
-        font-weight: 600;
-        z-index: 10;
-        p {
-            margin-left: 15px;
-            margin-right: 15px;
-        }
-
-        p:nth-child(2) {
-            color: rgb(75, 139, 190);
-        }
-
-        p:nth-child(3) {
-            color: rgb(240, 219, 79)
-        }
-
-        p:nth-child(4) {
-            color: rgb(228, 77, 38);
-        }
         
-        p:nth-child(5) {
-            color: rgb(205, 103, 153);
+            .personal-details {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                z-index: 10;
+        
+                h1 {
+                    color: white;
+                    // font-family: cursive;
+                }
+                p {
+                    color: white;
+                    // font-family: cursive;
+        
+                }
+            }
         }
-        p:nth-child(6) {
-            color: rgb(8, 1, 53);
-        }
-        p:nth-child(7) {
-            color: rgb(0, 0, 0);
+    
+        .skill-list{
+            color: whitesmoke;
+            display: flex;
+            align-items: baseline;
+            flex-direction: row;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: medium;
+            font-weight: 600;
+            z-index: 10;
+            // border: 1px solid grey;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+    
+            h3 {
+                margin-right: 10px;
+                margin-left: 10px;
+            }
+    
+            p {
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+    
+            p:nth-child(2) {
+                color: rgb(75, 139, 190);
+            }
+    
+            p:nth-child(3) {
+                color: rgb(240, 219, 79)
+            }
+    
+            p:nth-child(4) {
+                color: rgb(228, 77, 38);
+            }
+            
+            p:nth-child(5) {
+                color: rgb(205, 103, 153);
+            }
+            p:nth-child(6) {
+                color: rgb(8, 1, 53);
+            }
+            p:nth-child(7) {
+                color: rgb(0, 0, 0);
+            }
         }
     }
+    
     
 }
 
