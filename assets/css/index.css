@@ -73,6 +73,21 @@ nav li a {
   animation-name: rain;
   animation-duration: 20s;
   animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  overflow: hidden;
+  z-index: 1;
+}
+.main-section .python-logo1 {
+  width: 50px;
+  rotate: -60deg;
+  position: absolute;
+  top: -100px;
+  left: 95vw;
+  animation-name: rain-diagonal-left;
+  animation-timing-function: linear;
+  animation-duration: 50s;
+  animation-delay: 7s;
+  animation-iteration-count: infinite;
   overflow: hidden;
   z-index: 1;
 }
@@ -120,33 +135,79 @@ nav li a {
   position: absolute;
   top: -100px;
   left: 12vw;
-  animation-name: rain;
+  animation-name: rain-diagonal-left, rotate-logo;
+  animation-timing-function: linear;
   animation-duration: 40s;
   animation-delay: 3s;
   animation-iteration-count: infinite;
   overflow: hidden;
   z-index: 1;
 }
-.main-section .profile-img {
+.main-section .github-logo {
+  width: 50px;
+  position: absolute;
+  rotate: 12deg;
+  top: -100px;
+  left: 55vw;
+  animation-name: rain;
+  animation-duration: 20s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  overflow: hidden;
+  z-index: 1;
+}
+.main-section .scss-logo {
+  width: 50px;
+  position: absolute;
+  rotate: 34deg;
+  top: -100px;
+  left: 37vw;
+  animation-name: rain-diagonal-right, rotate-logo;
+  animation-duration: 20s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  overflow: hidden;
+  z-index: 1;
+}
+.main-section .main-content {
+  display: flex;
+  flex-direction: row;
+  z-index: 10;
+}
+.main-section .main-content .profile-img {
   box-shadow: 0 0 30px 1px black;
   margin: 50px;
   width: 200px;
+  max-height: 200px;
   border-radius: 100%;
   z-index: 9;
 }
-.main-section .personal-details {
+.main-section .main-content .personal-details {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.main-section .personal-details h1 {
+.main-section .main-content .personal-details h1 {
   color: white;
   font-family: cursive;
 }
-.main-section .personal-details p {
+.main-section .main-content .personal-details p {
   color: white;
   font-family: cursive;
+}
+.main-section .skill-list {
+  color: whitesmoke;
+  display: flex;
+  align-items: baseline;
+  flex-direction: row;
+}
+.main-section .skill-list p {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.main-section .skill-list p:nth(even) {
+  color: green;
 }
 
 @keyframes rain {
@@ -158,6 +219,31 @@ nav li a {
     opacity: 0;
   }
 }
+@keyframes rain-diagonal-right {
+  7% {
+    opacity: 1;
+  }
+  100% {
+    top: 95vh;
+    left: 95vw;
+    opacity: 0;
+  }
+}
+@keyframes rain-diagonal-left {
+  7% {
+    opacity: 1;
+  }
+  100% {
+    top: 95vh;
+    left: 5vw;
+    opacity: 0;
+  }
+}
+@keyframes rotate-logo {
+  100% {
+    rotate: 360deg;
+  }
+}
 @keyframes fade-in {
   0% {
     width: 0%;
@@ -166,7 +252,7 @@ nav li a {
 .work-section {
   z-index: 2;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   background-color: blanchedalmond;
 }
 .work-section .work-section-header {
@@ -185,7 +271,6 @@ nav li a {
   flex-grow: 1;
   align-items: center;
   flex-wrap: nowrap;
-  align-content: center;
   justify-content: center;
   flex-shrink: 1;
   flex-wrap: wrap;
