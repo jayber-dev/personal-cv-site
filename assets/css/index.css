@@ -320,6 +320,7 @@ nav li a {
   display: flex;
 }
 .work-section .container-wrapper .img-wrapper {
+  flex-grow: 1;
   margin-left: 5vw;
   width: 200px;
 }
@@ -350,7 +351,12 @@ nav li a {
   margin-left: 20px;
   width: 78vw;
   height: 80vh;
-  background-color: red;
+  flex-grow: 1;
+}
+.work-section .container-wrapper .project-right-side img {
+  max-height: 70vh;
+  min-height: 30vh;
+  max-width: 70vw;
 }
 
 .cv-section {
