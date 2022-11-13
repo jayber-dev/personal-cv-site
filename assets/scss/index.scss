@@ -392,6 +392,7 @@ nav {
                     width: 200px;
                     border-radius: 10px;
                     box-shadow: 1px 1px 3px 1px grey;
+                    opacity: 1;
                 }
                 
             }
@@ -402,7 +403,7 @@ nav {
                 opacity:0;
                 font-size: 20px;
                 text-align: center;
-                margin-top:-200px;
+                margin-top:-210px;
     
                 button {
                     height: 50px;
@@ -421,18 +422,25 @@ nav {
             
     }
         .project-right-side {
+           
             margin-left: 20px;
             width: 78vw;
             height: 80vh;
             flex-grow: 1;
-            // background-color: red;
-            
+            // background-image: url(/assets/images/tarot-site.png);            
+          
             img {
+                // opacity: 0.5;
                 max-height:70vh;
                 min-height: 30vh;
+                aspect-ratio:auto ;
                 max-width: 70vw;
                 border-radius: 10px;
             };
+            p {
+                position: absolute;
+            }
+        
         }
     }
     

@@ -332,6 +332,7 @@ nav li a {
   width: 200px;
   border-radius: 10px;
   box-shadow: 1px 1px 3px 1px grey;
+  opacity: 1;
 }
 .work-section .container-wrapper .img-wrapper .overlay {
   color: #f1f1f1;
@@ -339,7 +340,7 @@ nav li a {
   opacity: 0;
   font-size: 20px;
   text-align: center;
-  margin-top: -200px;
+  margin-top: -210px;
 }
 .work-section .container-wrapper .img-wrapper .overlay button {
   height: 50px;
@@ -359,8 +360,12 @@ nav li a {
 .work-section .container-wrapper .project-right-side img {
   max-height: 70vh;
   min-height: 30vh;
+  aspect-ratio: auto;
   max-width: 70vw;
   border-radius: 10px;
+}
+.work-section .container-wrapper .project-right-side p {
+  position: absolute;
 }
 
 .cv-section {
