@@ -373,14 +373,14 @@ nav {
             width: 200px;
             // display: flex;
             // flex-direction: row;
-            // flex-grow: 1;
-            // align-items: center;
+            flex-grow: 1;
+            align-items: center;
             // flex-wrap: nowrap;
             
             // justify-content: center;
             // flex-shrink: 1;
             // flex-wrap: wrap;
-            flex: 1 1 1 100px;
+            // flex: 1 1 1 100px;
             
             .img-container {
                 // height: 200px;
