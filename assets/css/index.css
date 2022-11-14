@@ -47,6 +47,50 @@ nav li a {
   text-decoration: none;
 }
 
+.side-menu-modal {
+  position: relative;
+  display: none;
+  position: fixed;
+  left: 10px;
+  top: 10px;
+  border-top: 0px solid transparent;
+  border-left: 60px solid #555;
+  border-bottom: 60px solid transparent;
+  box-shadow: -5px -5px 10px 1px grey;
+}
+.side-menu-modal p {
+  position: absolute;
+  left: -52px;
+  top: 0px;
+  color: whitesmoke;
+  transform: rotate(-45deg);
+}
+.side-menu-modal .menu-modal {
+  position: absolute;
+  left: -60px;
+  top: 10px;
+  display: none;
+  width: 200px;
+}
+.side-menu-modal .menu-modal ul {
+  list-style: none;
+}
+.side-menu-modal .menu-modal ul li {
+  margin-top: 20px;
+}
+.side-menu-modal .menu-modal ul li a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  font-size: larger;
+  color: whitesmoke;
+  opacity: 1;
+  text-decoration: none;
+}
+
+.side-menu-modal:hover .menu-modal {
+  display: block;
+}
+
 .main-section {
   z-index: 2;
   display: flex;
@@ -305,78 +349,11 @@ nav li a {
     width: 0%;
   }
 }
-.work-section {
+.project-section {
   z-index: 2;
   width: 100vw;
   min-height: 100vh;
   background-color: rgb(201, 201, 201);
-}
-.work-section .work-section-header {
-  display: flex;
-  height: 100px;
-  align-items: center;
-  justify-content: center;
-}
-.work-section .work-section-header h3 {
-  color: whitesmoke;
-  margin: 0px;
-  text-align: center;
-}
-.work-section .container-wrapper {
-  display: flex;
-  align-items: flex-start;
-}
-.work-section .container-wrapper .img-wrapper {
-  flex-grow: 1;
-  margin-left: 5vw;
-  width: 200px;
-  flex-grow: 1;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 1;
-  flex-wrap: wrap;
-  flex: 1 1 1 100px;
-}
-.work-section .container-wrapper .img-wrapper .img-container img {
-  height: 200px;
-  width: 200px;
-  border-radius: 10px;
-  box-shadow: 1px 1px 3px 1px grey;
-  opacity: 1;
-}
-.work-section .container-wrapper .img-wrapper .overlay {
-  color: #f1f1f1;
-  transition: 0.5s ease;
-  opacity: 0;
-  font-size: 20px;
-  text-align: center;
-  margin-top: -210px;
-}
-.work-section .container-wrapper .img-wrapper .overlay button {
-  height: 50px;
-  width: 100px;
-  background-color: darkcyan;
-}
-.work-section .container-wrapper .img-wrapper .img-container:hover .overlay {
-  z-index: 1;
-  opacity: 1;
-}
-.work-section .container-wrapper .project-right-side {
-  margin-left: 20px;
-  width: 78vw;
-  height: 80vh;
-  flex-grow: 1;
-}
-.work-section .container-wrapper .project-right-side img {
-  max-height: 70vh;
-  min-height: 30vh;
-  aspect-ratio: auto;
-  max-width: 70vw;
-  min-width: 20vw;
-  border-radius: 10px;
-}
-.work-section .container-wrapper .project-right-side p {
-  position: absolute;
 }
 
 .cv-section {
