@@ -63,12 +63,12 @@ nav {
     border-top: 0px solid transparent;
 	border-left: 60px solid #555;
 	border-bottom: 60px solid transparent;
-    box-shadow: -5px -5px 10px 1px  grey;
+    // box-shadow: -5px -5px 10px 1px  grey;
     
     p {
         position: absolute;
-        left: -52px;
-        top: -0px;
+        left: -55px;
+        top: -2px;
         color: whitesmoke;
         transform: rotate(-45deg);
     }
@@ -106,7 +106,7 @@ nav {
     z-index: 2;
     display: flex;
     flex-direction: row;
-    background-image: url('/pic04.jpg');
+    // background-image: url('/pic04.jpg');
     background-size: cover;
     height: 100vh;
     width: 100vw;
@@ -114,7 +114,7 @@ nav {
     flex-direction: column;
     height: 100vh;
     
-    // background-color: rgb(172, 172, 172);
+    background-color: rgb(172, 172, 172);
     // background-image: url(/assets/images/pic02.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -323,37 +323,51 @@ nav {
         
                 p:nth-child(3) {
                     color: rgb(228, 77, 38);
-                    text-shadow: 0 1px 10px  black;
+                    // text-shadow: 0 1px 10px  black;
+                    text-shadow: 1px 1px 0px  black;
+
     
                 }
         
                 p:nth-child(4) {
                     color: rgb(205, 103, 153);
-                    text-shadow: 0 1px 10px  black;
+                    // text-shadow: 0 1px 10px  black;
+                    text-shadow: 1px 1px 0px  black;
+
     
                 }
                 
                 p:nth-child(5) {
                     color: rgb(8, 1, 53);
-                    text-shadow: 0 1px 10px  black;
+                    // text-shadow: 0 1px 10px  black;
+                    // text-shadow: 1px 1px 0px  black;
+
     
                 }
                 p:nth-child(6) {
                     color: rgb(0, 0, 0);
-                    text-shadow: 0 1px 10px  black;
+                    // text-shadow: 0 1px 10px  black;
+                    // text-shadow: 1px 1px 0px  black;
+
     
                 }
                 p:nth-child(7) {
                     color: rgb(104, 160, 99);
-                    text-shadow: 0 1px 10px  black;
+                    // text-shadow: 0 1px 10px  black;
+                    text-shadow: 1px 1px 0px  black;
+
                 }
                 p:nth-child(8) {
                     color: rgb(0, 117, 143);
-                    text-shadow: 0 1px 10px  black;
+                    // text-shadow: 0 1px 10px  black;
+                    text-shadow: 1px 1px 0px  black;
+
                 }
                 p:nth-child(9) {
                     color: rgb(160, 117, 93);
-                    text-shadow: 0 1px 10px  black;
+                    // text-shadow: 0 1px 10px  black;
+                    text-shadow: 1px 1px 0px  black;
+
                 }
             }
             
