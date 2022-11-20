@@ -351,6 +351,51 @@ nav li a {
   width: 100vw;
   min-height: 100vh;
   background-color: rgb(201, 201, 201);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px;
+}
+.project-section .project-card {
+  padding: 5px;
+  position: relative;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid grey;
+  justify-content: center;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.project-section .project-card h2 {
+  border-bottom: 1px solid grey;
+  margin: 0px;
+  text-align: center;
+  padding: 10px;
+}
+.project-section .project-card .card-details {
+  display: flex;
+  flex-direction: row;
+}
+.project-section .project-card .card-details .project-description {
+  padding-left: 5px;
+  width: 65vw;
+}
+.project-section .project-card .card-details .project-description span {
+  background-color: azure;
+}
+.project-section .project-card .card-details .project-img {
+  width: 50%;
+  margin-left: 5px;
+  overflow: hidden;
+}
+.project-section .project-card .card-details .project-img img {
+  border-bottom-right-radius: 10px;
+  height: 100%;
+  border-top-right-radius: 10px;
+  height: 100%;
+  width: 100%;
 }
 
 .cv-section {
