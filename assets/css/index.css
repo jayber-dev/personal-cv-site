@@ -411,4 +411,57 @@ nav li a {
   background-color: darkred;
 }
 
+@media screen and (max-width: 600px) {
+  .project-section {
+    z-index: 2;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: rgb(201, 201, 201);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+  }
+  .project-section .project-card {
+    position: relative;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+    justify-content: center;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  .project-section .project-card h2 {
+    border-bottom: 1px solid grey;
+    margin: 0px;
+    text-align: center;
+  }
+  .project-section .project-card .card-details {
+    order: 1;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .project-section .project-card .card-details .project-description {
+    order: 3;
+    width: 65vw;
+  }
+  .project-section .project-card .card-details .project-description span {
+    background-color: azure;
+  }
+  .project-section .project-card .card-details .project-img {
+    order: 2;
+    width: 98%;
+    overflow: hidden;
+  }
+  .project-section .project-card .card-details .project-img img {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+  }
+}
+
 /*# sourceMappingURL=index.css.map */
