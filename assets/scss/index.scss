@@ -64,6 +64,7 @@ nav {
 	border-left: 60px solid #555;
 	border-bottom: 60px solid transparent;
     // box-shadow: -5px -5px 10px 1px  grey;
+    z-index: 10;
     
     p {
         position: absolute;
@@ -89,7 +90,7 @@ nav {
                     font-family: Verdana, Geneva, Tahoma, sans-serif;;
                     font-weight: 600;
                     font-size: larger;
-                    color: whitesmoke;
+                    color: olivedrab;
                     opacity: 1;
                     text-decoration: none;
                 }

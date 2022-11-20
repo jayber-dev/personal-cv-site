@@ -56,6 +56,7 @@ nav li a {
   border-top: 0px solid transparent;
   border-left: 60px solid #555;
   border-bottom: 60px solid transparent;
+  z-index: 10;
 }
 .side-menu-modal p {
   position: absolute;
@@ -81,7 +82,7 @@ nav li a {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 600;
   font-size: larger;
-  color: whitesmoke;
+  color: olivedrab;
   opacity: 1;
   text-decoration: none;
 }
