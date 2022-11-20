@@ -424,6 +424,7 @@ nav li a {
     padding: 100px;
   }
   .project-section .project-card {
+    padding: 5px;
     position: relative;
     width: 80vw;
     display: flex;
@@ -432,11 +433,16 @@ nav li a {
     justify-content: center;
     border-radius: 10px;
     margin-top: 20px;
+    height: auto;
   }
   .project-section .project-card h2 {
     border-bottom: 1px solid grey;
     margin: 0px;
     text-align: center;
+    padding: 10px;
+  }
+  .project-section .project-card p {
+    height: auto;
   }
   .project-section .project-card .card-details {
     order: 1;
@@ -447,6 +453,7 @@ nav li a {
   }
   .project-section .project-card .card-details .project-description {
     order: 3;
+    padding-left: 5px;
     width: 65vw;
   }
   .project-section .project-card .card-details .project-description span {
@@ -454,8 +461,8 @@ nav li a {
   }
   .project-section .project-card .card-details .project-img {
     order: 2;
-    width: 98%;
-    overflow: hidden;
+    width: 95%;
+    margin-left: 0px;
   }
   .project-section .project-card .card-details .project-img img {
     height: 100%;
