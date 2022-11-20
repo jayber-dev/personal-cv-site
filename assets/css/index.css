@@ -443,6 +443,7 @@ nav li a {
   }
   .project-section .project-card p {
     height: auto;
+    text-align: justify;
   }
   .project-section .project-card .card-details {
     order: 1;
